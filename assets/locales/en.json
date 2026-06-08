@@ -1,0 +1,18 @@
+{
+ "file_transfer":"File Transfer",
+  "send": "Send",
+  "send_files_to_nearby_devices": "Send files to nearby devices",
+  "receive": "Receive",
+  "receive_files_from_devices": "Receive files from devices",
+  "all": "All",
+  "photos": "Photos",
+  "videos": "Videos",
+  "files": "Files",
+  "recent_transfers": "Recent Transfers",
+  "see_all": "See All"
+
+
+
+
+
+}
