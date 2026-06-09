@@ -20,6 +20,8 @@ class LocaleKeys {
   static const photos = 'photos';
   static const videos = 'videos';
   static const files = 'files';
+  static const music = 'music';
+  static const app = 'app';
   static const recent_transfers = 'recent_transfers';
   static const see_all = 'see_all';
 }
@@ -35,6 +37,8 @@ class Locales {
     'photos': 'Photos',
     'videos': 'Videos',
     'files': 'Files',
+    'music': 'Music',
+    'app': 'App',
     'recent_transfers': 'Recent Transfers',
     'see_all': 'See All',
   };

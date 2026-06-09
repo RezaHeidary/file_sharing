@@ -2,11 +2,10 @@ import 'package:file_sharing/app/core/dimens.dart';
 import 'package:file_sharing/app/modules/home/widget/action_card.dart';
 import 'package:file_sharing/app/modules/home/widget/file_tile.dart';
 import 'package:file_sharing/app/modules/home/widget/filter_chip_widget.dart';
+import 'package:file_sharing/app/routes/app_pages.dart';
 import 'package:file_sharing/generated/locales.g.dart';
 import 'package:flutter/material.dart';
-
 import 'package:get/get.dart';
-
 import '../controllers/home_controller.dart';
 
 class HomeView extends GetView<HomeController> {
@@ -42,6 +41,7 @@ class HomeView extends GetView<HomeController> {
                       icon: Icons.arrow_upward,
                       color: Colors.blue,
                       onTap: () {
+                        Get.toNamed(Routes.SEND);
                         // Handle send action
                       },
                     ),
