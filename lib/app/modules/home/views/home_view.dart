@@ -25,7 +25,7 @@ class HomeView extends GetView<HomeController> {
 
               Center(
                 child: Text(
-                 LocaleKeys.file_transfer.tr,
+                  LocaleKeys.file_transfer.tr,
                   style: theme.textTheme.titleMedium,
                 ),
               ),
@@ -50,11 +50,11 @@ class HomeView extends GetView<HomeController> {
                   Expanded(
                     child: ActionCard.show(
                       title: LocaleKeys.receive.tr,
-                      subtitle:LocaleKeys.receive_files_from_devices.tr,
+                      subtitle: LocaleKeys.receive_files_from_devices.tr,
                       icon: Icons.arrow_downward,
                       color: Colors.green,
                       onTap: () {
-                        // Handle receive action
+                        Get.toNamed(Routes.WAITING);
                       },
                     ),
                   ),
@@ -71,7 +71,7 @@ class HomeView extends GetView<HomeController> {
                 ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children:  [
+                  children: [
                     FilterChipWidget(
                       title: LocaleKeys.all.tr,
 
@@ -99,8 +99,14 @@ class HomeView extends GetView<HomeController> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(LocaleKeys.recent_transfers.tr, style: theme.textTheme.bodyLarge),
-                  TextButton(onPressed: () {}, child:  Text(LocaleKeys.see_all.tr)),
+                  Text(
+                    LocaleKeys.recent_transfers.tr,
+                    style: theme.textTheme.bodyLarge,
+                  ),
+                  TextButton(
+                    onPressed: () {},
+                    child: Text(LocaleKeys.see_all.tr),
+                  ),
                 ],
               ),
 

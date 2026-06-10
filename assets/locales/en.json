@@ -14,6 +14,8 @@
   "make_sure_the_receiver_is_ready": "Make sure the receiver is ready",
   "nearby_devices": "Nearby Devices",
   "recent_transfers": "Recent Transfers",
+  "waiting_for_sender": "Waiting for sender...",
+  "your_device_is_visible_nearby": "Your device is visible nearby",
   "finding": "Finding",
   "see_all": "See All"
 }

@@ -27,6 +27,8 @@ class LocaleKeys {
       'make_sure_the_receiver_is_ready';
   static const nearby_devices = 'nearby_devices';
   static const recent_transfers = 'recent_transfers';
+  static const waiting_for_sender = 'waiting_for_sender';
+  static const your_device_is_visible_nearby = 'your_device_is_visible_nearby';
   static const finding = 'finding';
   static const see_all = 'see_all';
 }
@@ -48,6 +50,8 @@ class Locales {
     'make_sure_the_receiver_is_ready': 'Make sure the receiver is ready',
     'nearby_devices': 'Nearby Devices',
     'recent_transfers': 'Recent Transfers',
+    'waiting_for_sender': 'Waiting for sender...',
+    'your_device_is_visible_nearby': 'Your device is visible nearby',
     'finding': 'Finding',
     'see_all': 'See All',
   };

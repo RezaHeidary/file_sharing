@@ -6,6 +6,7 @@ abstract class Routes {
   static const HOME = _Paths.HOME;
   static const SEND = _Paths.SEND;
   static const FINDING = _Paths.FINDING;
+  static const WAITING = _Paths.WAITING;
 }
 
 abstract class _Paths {
@@ -13,4 +14,5 @@ abstract class _Paths {
   static const HOME = '/home';
   static const SEND = '/send';
   static const FINDING = '/finding';
+  static const WAITING = '/waiting';
 }
