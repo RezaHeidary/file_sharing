@@ -10,16 +10,19 @@ class SendView extends GetView<SendController> {
   const SendView({super.key});
   @override
   Widget build(BuildContext context) {
-    final theme=Get.theme;
+    final theme = Get.theme;
     return Scaffold(
-      appBar: AppBar(title: const Text('Send'), centerTitle: true),
+      appBar: AppBar(
+        title: Text('Send', style: theme.textTheme.titleMedium),
+        centerTitle: true,
+      ),
       body: DefaultTabController(
         length: 5,
         child: Column(
           children: [
             TabBar(
               isScrollable: false,
-              tabs:  [
+              tabs: [
                 Tab(text: LocaleKeys.app.tr),
                 Tab(text: LocaleKeys.photos.tr),
                 Tab(text: LocaleKeys.videos.tr),
@@ -54,7 +57,10 @@ class SendView extends GetView<SendController> {
               borderRadius: BorderRadius.circular(18),
             ),
           ),
-          child:  Text("Continue (12 items)",style: theme.textTheme.bodyMedium?.copyWith(color: Colors.white),),
+          child: Text(
+            "Continue (12 items)",
+            style: theme.textTheme.bodyMedium?.copyWith(color: Colors.white),
+          ),
         ),
       ),
     );

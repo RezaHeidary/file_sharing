@@ -22,7 +22,12 @@ class LocaleKeys {
   static const files = 'files';
   static const music = 'music';
   static const app = 'app';
+  static const looking_for_nearby_devices = 'looking_for_nearby_devices';
+  static const make_sure_the_receiver_is_ready =
+      'make_sure_the_receiver_is_ready';
+  static const nearby_devices = 'nearby_devices';
   static const recent_transfers = 'recent_transfers';
+  static const finding = 'finding';
   static const see_all = 'see_all';
 }
 
@@ -39,7 +44,11 @@ class Locales {
     'files': 'Files',
     'music': 'Music',
     'app': 'App',
+    'looking_for_nearby_devices': 'Looking for nearby devices...',
+    'make_sure_the_receiver_is_ready': 'Make sure the receiver is ready',
+    'nearby_devices': 'Nearby Devices',
     'recent_transfers': 'Recent Transfers',
+    'finding': 'Finding',
     'see_all': 'See All',
   };
   static const fa = {

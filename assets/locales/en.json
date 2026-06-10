@@ -10,6 +10,10 @@
   "files": "Files",
   "music": "Music",
   "app": "App",
+  "looking_for_nearby_devices": "Looking for nearby devices...",
+  "make_sure_the_receiver_is_ready": "Make sure the receiver is ready",
+  "nearby_devices": "Nearby Devices",
   "recent_transfers": "Recent Transfers",
+  "finding": "Finding",
   "see_all": "See All"
 }

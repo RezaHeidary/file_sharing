@@ -1,8 +1,5 @@
 import 'package:get/get.dart';
-
 import '../modules/finding/bindings/finding_binding.dart';
-import '../modules/finding/bindings/finding_binding.dart';
-import '../modules/finding/views/finding_view.dart';
 import '../modules/finding/views/finding_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
