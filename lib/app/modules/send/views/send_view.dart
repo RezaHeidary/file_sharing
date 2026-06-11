@@ -11,55 +11,59 @@ class SendView extends GetView<SendController> {
   @override
   Widget build(BuildContext context) {
     final theme = Get.theme;
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Send', style: theme.textTheme.titleMedium),
-        centerTitle: true,
-      ),
-      body: DefaultTabController(
-        length: 5,
-        child: Column(
-          children: [
-            TabBar(
-              isScrollable: false,
-              tabs: [
-                Tab(text: LocaleKeys.app.tr),
-                Tab(text: LocaleKeys.photos.tr),
-                Tab(text: LocaleKeys.videos.tr),
-                Tab(text: LocaleKeys.music.tr),
-                Tab(text: LocaleKeys.files.tr),
-              ],
-            ),
-            Expanded(
-              child: TabBarView(
-                children: [
-                  Container(),
-                  Container(),
-                  Container(),
-                  Container(),
-                  Container(),
+    return SafeArea(
+      top: false,
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text('Send', style: theme.textTheme.titleMedium),
+          centerTitle: true,
+        ),
+        body: DefaultTabController(
+          length: 5,
+          child: Column(
+            children: [
+              TabBar(
+                labelStyle:theme.textTheme.bodySmall?.copyWith(fontWeight: FontWeight.bold,fontSize: 10),
+                isScrollable: false,
+                tabs: [
+                  Tab(text: LocaleKeys.app.tr,),
+                  Tab(text: LocaleKeys.photos.tr),
+                  Tab(text: LocaleKeys.videos.tr),
+                  Tab(text: LocaleKeys.music.tr),
+                  Tab(text: LocaleKeys.files.tr),
                 ],
               ),
-            ),
-          ],
-        ),
-      ),
-      bottomNavigationBar: Padding(
-        padding: const EdgeInsets.all(16),
-        child: ElevatedButton(
-          onPressed: () {
-            Get.toNamed(Routes.FINDING);
-          },
-          style: ElevatedButton.styleFrom(
-            minimumSize: const Size(double.infinity, 60),
-            backgroundColor: Colors.blueAccent,
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(18),
-            ),
+              Expanded(
+                child: TabBarView(
+                  children: [
+                    Container(),
+                    Container(),
+                    Container(),
+                    Container(),
+                    Container(),
+                  ],
+                ),
+              ),
+            ],
           ),
-          child: Text(
-            "Continue (12 items)",
-            style: theme.textTheme.bodyMedium?.copyWith(color: Colors.white),
+        ),
+        bottomNavigationBar: Padding(
+          padding: const EdgeInsets.all(16),
+          child: ElevatedButton(
+            onPressed: () {
+              Get.toNamed(Routes.FINDING);
+            },
+            style: ElevatedButton.styleFrom(
+              minimumSize: const Size(double.infinity, 60),
+              backgroundColor: Colors.blueAccent,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(18),
+              ),
+            ),
+            child: Text(
+              "Continue (12 items)",
+              style: theme.textTheme.bodyMedium?.copyWith(color: Colors.white),
+            ),
           ),
         ),
       ),

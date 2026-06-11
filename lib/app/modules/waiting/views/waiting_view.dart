@@ -40,11 +40,13 @@ class WaitingView extends GetView<WaitingController> {
         title: Text(LocaleKeys.receive.tr, style: theme.textTheme.titleMedium),
         centerTitle: true,
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Center(
-            child: GestureDetector(
+      body: SizedBox(
+        width: _size.width,
+        height: _size.height * .7,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            GestureDetector(
               onTap: () {
                 Timer.periodic(Duration(seconds: 2), (time) {
                   Get.offNamed(Routes.TAKING)?.then((_) {
@@ -53,8 +55,8 @@ class WaitingView extends GetView<WaitingController> {
                 });
               },
               child: Container(
-                width: 240,
-                height: 240,
+                width: _size.width/1.5,
+                height:_size.height/3.5,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   color: Colors.blue.withValues(alpha: .08),
@@ -65,22 +67,22 @@ class WaitingView extends GetView<WaitingController> {
                 ),
               ),
             ),
-          ),
 
-          const SizedBox(height: AppDimens.large),
+            const SizedBox(height: AppDimens.large),
 
-          Text(
-            LocaleKeys.waiting_for_sender.tr,
-            style: theme.textTheme.titleMedium,
-          ),
+            Text(
+              LocaleKeys.waiting_for_sender.tr,
+              style: theme.textTheme.titleMedium,
+            ),
 
-          const SizedBox(height: 8),
+            const SizedBox(height: AppDimens.small),
 
-          Text(
-            LocaleKeys.your_device_is_visible_nearby.tr,
-            style: theme.textTheme.bodyMedium,
-          ),
-        ],
+            Text(
+              LocaleKeys.your_device_is_visible_nearby.tr,
+              style: theme.textTheme.bodyMedium,
+            ),
+          ],
+        ),
       ),
     );
   }

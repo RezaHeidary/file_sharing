@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../controllers/home_controller.dart';
 
+final _size=Get.size;
 class HomeView extends GetView<HomeController> {
   const HomeView({super.key});
   @override
@@ -64,13 +65,15 @@ class HomeView extends GetView<HomeController> {
               const SizedBox(height: AppDimens.large),
 
               Container(
-                padding: const EdgeInsets.all(12),
+                width: _size.width,
+                height: _size.height*.06,
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(24),
                 ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                child: ListView(
+                  
+                  scrollDirection: Axis.horizontal,
                   children: [
                     FilterChipWidget(
                       title: LocaleKeys.all.tr,

@@ -27,11 +27,12 @@ class FilterChipWidget extends StatelessWidget {
       ),
       child: Row(
         children: [
-          Icon(icon, size: 18, color: selected ? Colors.blue : Colors.grey),
+          Icon(icon, size: 15, color: selected ? Colors.blue : Colors.grey),
           const SizedBox(width: AppDimens.small),
           Text(
             title,
             style: theme.textTheme.bodySmall?.copyWith(
+              fontSize: 10,
               color: selected ? Colors.blue : Colors.black,
             ),
           ),
