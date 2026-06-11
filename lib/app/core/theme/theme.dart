@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 class Themes {
   static final lightTheme = ThemeData(
     scaffoldBackgroundColor:MyColorLight.scaffoldBackgroundColor,
+  
     appBarTheme: const AppBarTheme(backgroundColor: Colors.white),
     textTheme: TextTheme(
       titleMedium: TextStyle(
@@ -15,7 +16,8 @@ class Themes {
       bodyMedium: TextStyle(fontSize: 14, color: MyColorLight.bodyLarge),
       bodySmall: TextStyle(fontSize: 12, color: MyColorLight.bodySmall),
     ),
-    cardColor: MyColorLight.card
+    cardColor: MyColorLight.card,
+    iconTheme: IconThemeData(color: Colors.black)
   );
 
   static final darkTheme = ThemeData.dark().copyWith();

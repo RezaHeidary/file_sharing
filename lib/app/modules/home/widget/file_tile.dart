@@ -50,7 +50,10 @@ class FileTile {
               ],
             ),
           ),
-          IconButton(onPressed: onPressed, icon: const Icon(Icons.more_vert)),
+          IconButton(
+            onPressed: onPressed,
+            icon: Icon(Icons.more_vert, color: _theme.iconTheme.color),
+          ),
         ],
       ),
     );

@@ -17,5 +17,10 @@
   "waiting_for_sender": "Waiting for sender...",
   "your_device_is_visible_nearby": "Your device is visible nearby",
   "finding": "Finding",
+  "cancel": "Cancel",
+  "sending_files": "Sending Files",
+  "transferred": "Transferred",
+  "speed": "Speed",
+  "time_left": "Time Left",
   "see_all": "See All"
 }

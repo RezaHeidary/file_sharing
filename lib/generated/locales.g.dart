@@ -30,6 +30,11 @@ class LocaleKeys {
   static const waiting_for_sender = 'waiting_for_sender';
   static const your_device_is_visible_nearby = 'your_device_is_visible_nearby';
   static const finding = 'finding';
+  static const cancel = 'cancel';
+  static const sending_files = 'sending_files';
+  static const transferred = 'transferred';
+  static const speed = 'speed';
+  static const time_left = 'time_left';
   static const see_all = 'see_all';
 }
 
@@ -53,6 +58,11 @@ class Locales {
     'waiting_for_sender': 'Waiting for sender...',
     'your_device_is_visible_nearby': 'Your device is visible nearby',
     'finding': 'Finding',
+    'cancel': 'Cancel',
+    'sending_files': 'Sending Files',
+    'transferred': 'Transferred',
+    'speed': 'Speed',
+    'time_left': 'Time Left',
     'see_all': 'See All',
   };
   static const fa = {

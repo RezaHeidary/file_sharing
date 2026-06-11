@@ -7,6 +7,7 @@ abstract class Routes {
   static const SEND = _Paths.SEND;
   static const FINDING = _Paths.FINDING;
   static const WAITING = _Paths.WAITING;
+  static const TAKING = _Paths.TAKING;
 }
 
 abstract class _Paths {
@@ -15,4 +16,5 @@ abstract class _Paths {
   static const SEND = '/send';
   static const FINDING = '/finding';
   static const WAITING = '/waiting';
+  static const TAKING = '/taking';
 }
