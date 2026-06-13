@@ -6,6 +6,7 @@ import 'package:file_sharing/generated/locales.g.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:loading_animation_widget/loading_animation_widget.dart';
 
 import '../controllers/waiting_controller.dart';
 
@@ -55,15 +56,13 @@ class WaitingView extends GetView<WaitingController> {
                 });
               },
               child: Container(
-                width: _size.width/1.5,
-                height:_size.height/3.5,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   color: Colors.blue.withValues(alpha: .08),
                 ),
-                child: CircularProgressIndicator(
+                child: LoadingAnimationWidget.threeArchedCircle(
                   color: Colors.blue,
-                  padding: EdgeInsets.all(50),
+                  size: _size.width/4,
                 ),
               ),
             ),
