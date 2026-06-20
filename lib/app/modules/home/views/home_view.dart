@@ -42,7 +42,8 @@ class HomeView extends GetView<HomeController> {
                       icon: Icons.arrow_upward,
                       color: Colors.blue,
                       onTap: () {
-                        Get.toNamed(Routes.SEND);
+                        // Get.toNamed(Routes.SEND);
+                        Navigator.pushNamed(context, Routes.SEND);
                         // Handle send action
                       },
                     ),

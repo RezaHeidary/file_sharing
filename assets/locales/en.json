@@ -21,6 +21,9 @@
   "sending_files": "Sending Files",
   "transferred": "Transferred",
   "speed": "Speed",
+  "we_cant_not_found_data": "We can't not found data",
   "time_left": "Time Left",
+  "try_again": "try again",
+  "continue_count_items": "Continue (@count items)",
   "see_all": "See All"
 }

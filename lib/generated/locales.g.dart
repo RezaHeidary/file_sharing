@@ -34,7 +34,10 @@ class LocaleKeys {
   static const sending_files = 'sending_files';
   static const transferred = 'transferred';
   static const speed = 'speed';
+  static const we_cant_not_found_data = 'we_cant_not_found_data';
   static const time_left = 'time_left';
+  static const try_again = 'try_again';
+  static const continue_count_items = 'continue_count_items';
   static const see_all = 'see_all';
 }
 
@@ -62,7 +65,10 @@ class Locales {
     'sending_files': 'Sending Files',
     'transferred': 'Transferred',
     'speed': 'Speed',
+    'we_cant_not_found_data': 'We can\'t not found data',
     'time_left': 'Time Left',
+    'try_again': 'try again',
+    'continue_count_items': 'Continue (@count items)',
     'see_all': 'See All',
   };
   static const fa = {
